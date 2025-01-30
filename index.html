@@ -21,10 +21,10 @@
 				<!-- Header -->
 					<header id="header">
 						<h1>Nil Plana</h1>
-						<p>Software Engineer &nbsp;&bull;&nbsp;</p>
+						<p>Software Engineer &nbsp;&bull;&nbsp; Parla'm del teu projecte!</p>
 						<nav>
 							<ul>
-								<li><a href="https://x.com/npixind" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://x.com/npixapps" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 								<li><a href="https://github.com/nilpix" class="icon brands fa-github"><span class="label">Github</span></a></li>
 								<li><a href="mailto:npixind@gmail.com?subject=Consulta%20des%20de%20la%20web&body=Hola,%20vull%20fer-te%20una%20consulta:" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
@@ -33,7 +33,11 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<span class="copyright" style="opacity: 0.4;">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+						<span class="copyright" style="opacity: 0.4;">&copy; Npix Industries. 2025. <a id="contacta" href="#" onclick="showEmail(); return false;"> Contacta'm</a></span>
+						<span class="copyright" style="opacity: 0.8;">
+							<a id="email" href="mailto:npixind@gmail.com?subject=Consulta%20des%20de%20la%20web&body=Hola,%20vull%20fer-te%20una%20consulta:" style="display: none">npixind@gmail.com</a>
+						</span>
+
 					</footer>
 
 			</div>
@@ -42,6 +46,13 @@
 			window.onload = function() { document.body.classList.remove('is-preload'); }
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
+
+			function showEmail() {
+				var email = document.getElementById("email");
+				email.style.display = "initial";
+				var contacta = document.getElementById("contacta");
+				contacta.style.display = "none";
+			}
 		</script>
 		<script src="assets/js/main.js"></script>
 	</body>
