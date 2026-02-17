@@ -33,7 +33,7 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<span class="copyright" style="opacity: 0.4;">&copy; Npix Industries. 2025. <a id="contacta" href="#" onclick="showEmail(); return false;"> Contacta'm</a></span>
+						<span class="copyright" style="opacity: 0.4;">&copy; Npix Industries. 2025-<span id="year"></span>. <a id="contacta" href="#" onclick="showEmail(); return false;"> Contacta'm</a></span>
 						<span class="copyright" style="opacity: 0.8;">
 							<a id="email" href="mailto:npixind@gmail.com?subject=Consulta%20des%20de%20la%20web&body=Hola,%20vull%20fer-te%20una%20consulta:" style="display: none">npixind@gmail.com</a>
 						</span>
@@ -44,6 +44,7 @@
 		</div>
 		<script>
 			window.onload = function() { document.body.classList.remove('is-preload'); }
+			document.getElementById("year").textContent = new Date().getFullYear();
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
 
